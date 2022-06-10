@@ -1,0 +1,66 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  h1{
+    color: darkblue;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .accordion {
+    background-color: #eee;
+    color: darkblue;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: rgb(116, 112, 112); 
+  }
+  
+  .Imagen{
+    display: flex;
+    flex-direction: row;
+    min-width: 100px;
+    height: 50%;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+  
+  .panel h2{
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .panel ul{
+    background-color: rgb(212, 205, 205);
+  }
+  
+  .Accordion .panel::before{
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(-50%);
+    font-size: 1,5em;
+  }
+  
+  
+  
+  
